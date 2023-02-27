@@ -14,10 +14,20 @@ body {
 }
 
 #home-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  @media (min-width: 1150px) {
+    flex-direction: row;
+    gap: 109px;
+  }
 }
