@@ -17,6 +17,7 @@
   background-color: var(--clr-secondary-gray);
   padding: 20px;
   border-radius: 16px;
+  transition: all 0.5s;
 
   & &__img {
     width: 56px;
@@ -38,5 +39,9 @@
     color: var(--clr-secondary-white);
     opacity: 50%;
     font-weight: var(--fw-regular);
+  }
+
+  &:hover {
+    transform: scale(1.03);
   }
 }
