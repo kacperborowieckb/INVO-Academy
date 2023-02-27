@@ -1,0 +1,23 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+@import "styles/cards.scss";
+@import "styles/text-component.scss";
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--clr-primary-dark);
+  color: var(--clr-secondary-white);
+}
+
+#home-page {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
