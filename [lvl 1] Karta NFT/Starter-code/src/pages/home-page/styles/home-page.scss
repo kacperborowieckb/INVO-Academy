@@ -10,17 +10,16 @@
     max-width: 413px;
     background-color: var(--clr-box);
     border-radius: 20px;
-    overflow: hidden;
+    background-image: url(/images/nft-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
   }
 
   & &__card-top-section {
-    position: relative;
+    padding: 252px 103px 32px 32px;
   }
 
   & &__card-desc {
-    position: absolute;
-    left: 32px;
-    bottom: 32px;
     max-width: 278px;
   }
 
@@ -79,11 +78,62 @@
     gap: 16px;
   }
 
+  & &__card-author-text {
+    font-weight: var(--fw-medium);
+    letter-spacing: -0.01em;
+    line-height: 26px;
+  }
+
   & &__card-profile-picture {
     border-radius: 50%;
   }
 
   & &__card-username {
     color: var(--clr-title);
+  }
+
+  @media (max-width: 900px) {
+    & &__card {
+      max-width: 343px;
+    }
+
+    & &__card-top-section {
+      padding: 229px 68px 24px 24px;
+    }
+
+    & &__card-desc {
+      left: 24px;
+      bottom: 24px;
+      max-width: 251px;
+    }
+
+    & &__title {
+      margin-bottom: 16px;
+    }
+
+    & &__card-bottom-section {
+      padding: 0px 24px 20px 24px;
+    }
+
+    & &__card-amount-text {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    & &__card-time-left {
+      font-size: 14px;
+      line-height: 22px;
+      padding-right: 9px;
+    }
+
+    & &__card-author {
+      margin-top: 20px;
+      padding-top: 20px;
+    }
+
+    & &__card-author-text {
+      line-height: 22px;
+      font-size: 14px;
+    }
   }
 }
