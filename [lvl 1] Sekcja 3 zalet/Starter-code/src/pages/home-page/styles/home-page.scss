@@ -63,6 +63,22 @@
 
   & &__card-button-arrow {
     width: 19px;
+    height: 19px;
+    background: url(/images/arrow.png);
+    background-size: 100%;
+  }
+
+  & &__card-button:hover > * {
+    background: url(/images/arrowblue.png);
+    background-size: 100%;
+  }
+
+  & &__card-button:hover {
+    color: var(--clr-btn-hover-text);
+  }
+
+  & &__card-button:active {
+    background-color: var(--clr-btn-pressed-bg);
   }
 
   @media (max-width: 1150px) {
