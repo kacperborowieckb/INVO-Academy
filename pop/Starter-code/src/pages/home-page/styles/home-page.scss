@@ -6,7 +6,7 @@
   & &__container {
     display: flex;
     justify-content: center;
-    margin-top: 159px;
+    padding-top: 159px;
   }
 
   & &__text-component {
@@ -73,7 +73,7 @@
       display: grid;
       place-content: center;
       gap: 24px;
-      margin: 0;
+      padding: 0;
       max-width: 496px;
     }
 

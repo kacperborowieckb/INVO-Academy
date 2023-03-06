@@ -1,0 +1,19 @@
+/// Root Styles file
+/// Here we define all the root variables we need for our project.
+/// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
+
+:root {
+  --clr-card-green: #e5efe2;
+  --clr-card-blue: #e4e9f3;
+  --clr-card-yellow: #f4f1e4;
+
+  --clr-headings: #000000;
+  --clr-desc: #141414;
+
+  --clr-btn: #ffffff;
+  --clr-btn-hover-text: #001aff;
+  --clr-btn-pressed-bg: #f1f5ff;
+
+  --fw-bold: 700;
+  --fw-regular: 400;
+}
