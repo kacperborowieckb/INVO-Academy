@@ -38,6 +38,10 @@
     letter-spacing: -0.01em;
     margin: 0;
     font-weight: var(--fw-medium);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   & &__card-bottom-section {
@@ -95,6 +99,7 @@
   @media (max-width: 900px) {
     & &__card {
       max-width: 343px;
+      background-position: 58% 0%;
     }
 
     & &__card-top-section {
