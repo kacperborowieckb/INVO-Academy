@@ -26,6 +26,7 @@
     min-height: 273px;
     border-radius: 10px;
     overflow: hidden;
+    transition: transform 0.5s;
   }
 
   & &__img {
@@ -33,7 +34,7 @@
     object-fit: cover;
     object-position: center;
     display: block;
-    max-width: 100%;
+    width: 100%;
   }
 
   & &__user {
@@ -64,6 +65,7 @@
   & &__title {
     margin: 0;
     margin-bottom: 14px;
+    color: var(--clr-black);
     font-size: var(--fs-big);
     line-height: var(--fs-big);
     font-weight: var(--fw-medium);
@@ -74,16 +76,46 @@
     font-size: var(--fs-medium);
     font-weight: var(--fw-regular);
     color: var(--clr-gray);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   & &__button {
     line-height: var(--line-height);
     font-size: var(--fs-medium);
     display: flex;
+    align-items: center;
+    padding: 0px;
+    background: none;
+    width: max-content;
+    border: none;
+    cursor: pointer;
     gap: 12px;
     color: var(--clr-black);
     font-weight: var(--fw-medium);
-    text-decoration: none;
+    position: relative;
+  }
+
+  & &__button::before {
+    content: "";
+    width: 80%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--clr-black);
+    transform: scaleX(0);
+    transition: transform 0.5s;
+  }
+
+  & &__card:hover > &__img-container {
+    transform: scale(1.02);
+  }
+
+  & &__card:hover > &__button::before {
+    transform: scaleX(1);
   }
 
   @media (max-width: 768px) {
