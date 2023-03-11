@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVO Academy JS Starter with Vite</title>
+  </head>
+
+  <!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
+
+  <body>
+    <div class="home-page">
+      <div class="card">
+        <div class="card__bg-img"></div>
+        <div class="card__text-content">
+          <h1 class="card__title">Order Summary</h1>
+          <p class="card__desc">You're close! Confirm your purchase and complete your order in the next step</p>
+        </div>
+        <div class="product">
+          <img src="/images/note-icon.svg" alt="note" class="product__icon" />
+          <div class="product__text-content">
+            <h2 class="product__title">Annual Plan</h2>
+            <p class="product__price">$58.99 / year</p>
+          </div>
+          <a href="#" class="product__change">Change</a>
+        </div>
+        <div class="buttons">
+          <a href="#" class="buttons__payment">Proceed to Payment</a>
+          <a href="#" class="buttons__loading"></a>
+          <a href="#" class="buttons__cancel">Cancel Order</a>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/global-scripts/main.js"></script>
+    <script type="module" src="/src/pages/home-page/scripts/home-page.js"></script>
+  </body>
+</html>

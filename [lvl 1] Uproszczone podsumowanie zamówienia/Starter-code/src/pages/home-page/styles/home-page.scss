@@ -1,0 +1,9 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+
+.home-page {
+  background-color: #f8f9fe;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}

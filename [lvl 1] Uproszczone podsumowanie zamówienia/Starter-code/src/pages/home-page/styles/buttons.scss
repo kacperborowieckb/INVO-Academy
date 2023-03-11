@@ -1,0 +1,30 @@
+.buttons {
+  display: grid;
+  gap: 20px;
+  padding: 0px 16px 32px 16px;
+  text-align: center;
+
+  & &__payment {
+    border-radius: 16px;
+    background-color: var(--clr-link);
+    color: var(--clr-bg);
+    padding: 15px 0px;
+    line-height: 26px;
+    font-weight: var(--fw-bold);
+    letter-spacing: -0.01em;
+  }
+
+  & &__loading {
+    display: none;
+  }
+
+  & &__cancel {
+    font-weight: var(--fw-bold);
+    line-height: 26px;
+    color: var(--clr-font-dark);
+    letter-spacing: -0.01em;
+    width: max-content;
+    margin: 0 auto;
+    border-bottom: solid 1px var(--clr-font-dark);
+  }
+}

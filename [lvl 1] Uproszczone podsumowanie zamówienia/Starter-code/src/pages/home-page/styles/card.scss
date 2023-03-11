@@ -1,0 +1,38 @@
+.card {
+  --clr-bg: #ffffff;
+  --clr-link: #680262;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 460px;
+  box-sizing: border-box;
+  background-color: var(--clr-bg);
+
+  & &__bg-img {
+    height: 232px;
+    background: url(images/bg-img.jpg);
+    background-position: center;
+  }
+
+  & &__text-content {
+    text-align: center;
+    padding: 0px 55px;
+    max-width: 350px;
+  }
+
+  & &__title {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-weight: var(--fw-bold);
+    color: var(--clr-font-dark);
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  & &__desc {
+    color: var(--clr-font-light);
+    font-weight: var(--fw-medium);
+    margin: 0;
+    line-height: 26px;
+    letter-spacing: -0.01em;
+  }
+}
