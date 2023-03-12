@@ -1,10 +1,15 @@
 .card {
   --clr-bg: #ffffff;
   --clr-link: #680262;
+  --fs-title: 32px;
+  --lh-title: 44px;
+  --fs-desc: 16px;
+  --lh-desc: 26px;
   border-radius: 16px;
   overflow: hidden;
   max-width: 460px;
   box-sizing: border-box;
+  margin: 32px 16px;
   background-color: var(--clr-bg);
 
   & &__bg-img {
@@ -24,15 +29,36 @@
     margin-bottom: 16px;
     font-weight: var(--fw-bold);
     color: var(--clr-font-dark);
-    font-size: 32px;
-    line-height: 44px;
+    font-size: var(--fs-title);
+    line-height: var(--lh-title);
   }
 
   & &__desc {
     color: var(--clr-font-light);
     font-weight: var(--fw-medium);
     margin: 0;
-    line-height: 26px;
+    font-size: var(--fs-desc);
+    line-height: var(--lh-desc);
     letter-spacing: -0.01em;
+  }
+
+  @media (max-width: 900px) {
+    --fs-title: 24px;
+    --lh-title: 33px;
+    --fs-desc: 14px;
+    --lh-desc: 22px;
+
+    & &__bg-img {
+      height: 188px;
+    }
+
+    & &__text-content {
+      padding: 0px 16px;
+      max-width: 310px;
+    }
+
+    & &__title {
+      margin-top: 40px;
+    }
   }
 }

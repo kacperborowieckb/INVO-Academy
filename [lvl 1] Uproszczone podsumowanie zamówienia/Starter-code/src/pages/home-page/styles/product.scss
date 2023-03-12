@@ -1,6 +1,12 @@
 .product {
   --clr-bg: #f8f9fe;
   --border-clr: #cfd1dd;
+  --fs-title: 18px;
+  --lh-title: 25px;
+  --fs-price: 14px;
+  --lh-price: 22px;
+  --fs-change: 16px;
+  --lh-change: 26px;
   margin: 40px 16px 32px 16px;
   padding: 16px 32px;
   border-radius: 16px;
@@ -17,16 +23,16 @@
   }
 
   & &__title {
-    font-size: 18px;
+    font-size: var(--fs-title);
     margin: 0;
-    line-height: 25px;
+    line-height: var(--lh-title);
     color: var(--clr-font-dark);
     font-weight: var(--fw-bold);
   }
 
   & &__price {
-    line-height: 22px;
-    font-size: 14px;
+    line-height: var(--lh-price);
+    font-size: var(--fs-price);
     color: var(--clr-font-light);
     margin: 0;
     margin-top: 2px;
@@ -36,8 +42,27 @@
   & &__change {
     color: var(--clr-link);
     font-weight: var(--fw-bold);
-    line-height: 26px;
+    line-height: var(--lh-change);
+    font-size: var(--fs-change);
     letter-spacing: -0.01em;
     text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  @media (max-width: 900px) {
+    --fs-title: 16px;
+    --lh-title: 22px;
+    --fs-price: 12px;
+    --lh-price: 19px;
+    --fs-change: 14px;
+    --lh-change: 22px;
+    padding: 16px 24px 16px 20px;
+    margin-top: 32px;
+    gap: 20px;
+
+    & &__text-content {
+      padding: 0px;
+      padding-left: 24px;
+    }
   }
 }

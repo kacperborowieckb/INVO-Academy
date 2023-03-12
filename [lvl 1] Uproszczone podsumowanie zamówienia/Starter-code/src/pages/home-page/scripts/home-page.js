@@ -6,6 +6,6 @@ import "../styles/card.scss"
 import "../styles/buttons.scss"
 import "../styles/product.scss"
 
-import { setupCounter } from "../../../global-scripts/scripts/counter/counter.js"
+import { payment } from "../../../global-scripts/scripts/payment/payment.js"
 
-setupCounter(document.querySelector("#counter"))
+payment(document.querySelector(".buttons__payment"))
