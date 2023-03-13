@@ -1,0 +1,31 @@
+.user {
+  display: flex;
+  align-items: center;
+
+  & &__profile-picture {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+  }
+
+  & &__username {
+    color: var(--clr-black);
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-small);
+    flex-grow: 1;
+  }
+
+  & &__recently-active {
+    font-size: var(--fs-small);
+    font-weight: var(--fw-regular);
+    color: var(--clr-gray);
+  }
+
+  @media (max-width: 768px) {
+    & &__profile-picture {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

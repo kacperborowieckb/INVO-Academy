@@ -1,0 +1,28 @@
+.text-content {
+  & &__title {
+    margin: 0;
+    margin-bottom: 14px;
+    color: var(--clr-black);
+    font-size: var(--fs-big);
+    line-height: var(--fs-big);
+    font-weight: var(--fw-medium);
+  }
+
+  & &__desc {
+    line-height: var(--line-height);
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-regular);
+    color: var(--clr-gray);
+    height: calc(3 * var(--line-height));
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  @media (max-width: 768px) {
+    & &__title {
+      margin-bottom: 8px;
+    }
+  }
+}
