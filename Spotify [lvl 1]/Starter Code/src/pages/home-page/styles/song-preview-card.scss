@@ -1,0 +1,91 @@
+.song-preview-card {
+  margin: 30px 16px;
+  background-color: #9296c4;
+  width: 100%;
+  height: 100%;
+  max-width: 413px;
+  max-height: 607px;
+  border-radius: 24px;
+  padding: 16px;
+  color: white;
+  --fs-info-text: 18px;
+  --img-height: 381px;
+
+  & &__image-container {
+    position: relative;
+    border-radius: 16px;
+    width: 100%;
+    height: var(--img-height);
+    overflow: hidden;
+  }
+
+  & &__content {
+    margin-top: 7px;
+    padding: 16px;
+  }
+
+  & &__title {
+    font-size: 24px;
+    line-height: 1.4em;
+    font-weight: 700;
+  }
+
+  & &__artist-and-time {
+    margin-top: 11px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  & &__time {
+    display: flex;
+    gap: 8px;
+  }
+
+  & &__album-cover-and-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 24px;
+    border-top: 1.5px solid hsla(0, 0%, 100%, 0.2);
+  }
+
+  & &__album-cover-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  & &__album-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  & &__album-info-dot-spacer {
+    opacity: 0.5;
+    width: 6px;
+  }
+
+  & &__album-info-text {
+    font-size: var(--fs-info-text);
+    line-height: 25px;
+    letter-spacing: -0.01em;
+  }
+
+  @media (max-width: 600px) {
+    --fs-info-text: 14px;
+    --img-height: 311px;
+    max-width: 343px;
+
+    & &__album-cover-and-info {
+      gap: 12px;
+    }
+  }
+}
