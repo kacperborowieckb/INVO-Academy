@@ -1,0 +1,32 @@
+.button {
+  line-height: var(--line-height);
+  font-size: var(--fs-medium);
+  display: flex;
+  align-items: center;
+  margin-top: -21px;
+  padding: 0px;
+  background: none;
+  width: max-content;
+  border: none;
+  cursor: pointer;
+  gap: 12px;
+  color: var(--clr-black);
+  font-weight: var(--fw-medium);
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 80%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--clr-black);
+    transform: scaleX(0);
+    transition: transform 0.5s;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
+}

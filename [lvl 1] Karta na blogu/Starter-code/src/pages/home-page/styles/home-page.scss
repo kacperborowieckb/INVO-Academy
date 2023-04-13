@@ -23,10 +23,9 @@
   }
 
   & &__img-container {
-    min-height: 273px;
+    height: 296px;
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.5s;
   }
 
   & &__img {
@@ -35,86 +34,14 @@
     object-position: center;
     display: block;
     width: 100%;
-  }
-
-  & &__user {
-    display: flex;
-    align-items: center;
-  }
-
-  & &__profile-picture {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-right: 12px;
-  }
-
-  & &__username {
-    color: var(--clr-black);
-    font-weight: var(--fw-medium);
-    font-size: var(--fs-small);
-    flex-grow: 1;
-  }
-
-  & &__recently-active {
-    font-size: var(--fs-small);
-    font-weight: var(--fw-regular);
-    color: var(--clr-gray);
-  }
-
-  & &__title {
-    margin: 0;
-    margin-bottom: 14px;
-    color: var(--clr-black);
-    font-size: var(--fs-big);
-    line-height: var(--fs-big);
-    font-weight: var(--fw-medium);
-  }
-
-  & &__desc {
-    line-height: var(--line-height);
-    font-size: var(--fs-medium);
-    font-weight: var(--fw-regular);
-    color: var(--clr-gray);
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  & &__button {
-    line-height: var(--line-height);
-    font-size: var(--fs-medium);
-    display: flex;
-    align-items: center;
-    padding: 0px;
-    background: none;
-    width: max-content;
-    border: none;
-    cursor: pointer;
-    gap: 12px;
-    color: var(--clr-black);
-    font-weight: var(--fw-medium);
-    position: relative;
-  }
-
-  & &__button::before {
-    content: "";
-    width: 80%;
-    height: 1px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-color: var(--clr-black);
-    transform: scaleX(0);
     transition: transform 0.5s;
   }
 
-  & &__card:hover > &__img-container {
-    transform: scale(1.02);
+  & &__card:hover > &__img-container > &__img {
+    transform: scale(1.06);
   }
 
-  & &__card:hover > &__button::before {
+  & &__card:hover > .button::before {
     transform: scaleX(1);
   }
 
@@ -128,13 +55,8 @@
       --line-height: 18px;
     }
 
-    & &__title {
-      margin-bottom: 8px;
-    }
-
-    & &__profile-picture {
-      width: 36px;
-      height: 36px;
+    & &__img-container {
+      height: 273px;
     }
 
     & &__img {

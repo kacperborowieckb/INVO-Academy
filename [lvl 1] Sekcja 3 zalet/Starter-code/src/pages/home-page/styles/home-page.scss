@@ -8,124 +8,13 @@
   gap: 1rem;
   justify-content: center;
 
-  & &__card {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    max-width: 368px;
-    border-radius: 12px;
-  }
-
-  & &__card:nth-child(1) {
-    background-color: var(--clr-card-green);
-  }
-
-  & &__card:nth-child(2) {
-    background-color: var(--clr-card-blue);
-  }
-
-  & &__card:nth-child(3) {
-    background-color: var(--clr-card-yellow);
-  }
-
-  & &__img {
-    width: 72px;
-  }
-
-  & &__title {
-    margin: 0;
-    margin-top: 24px;
-    font-weight: var(--fw-bold);
-    font-size: 2rem;
-    color: var(--clr-headings);
-    line-height: 38px;
-  }
-
-  & &__desc {
-    font-weight: var(--fw-regular);
-    line-height: 22px;
-    margin-top: 16px;
-    margin-bottom: 24px;
-  }
-
-  & &__button {
-    display: flex;
-    gap: 6px;
-    text-decoration: none;
-    background-color: var(--clr-btn);
-    color: var(--clr-headings);
-    font-weight: var(--fw-regular);
-    padding: 14px 19px 15px 24px;
-    border-radius: 200px;
-    font-size: 12px;
-    line-height: 18px;
-    max-width: max-content;
-  }
-
-  & &__arrow {
-    width: 19px;
-    height: 19px;
-    background: url(/images/arrow.png);
-    background-size: 100%;
-  }
-
-  & &__button:hover > * {
-    background: url(/images/arrowblue.png);
-    background-size: 100%;
-  }
-
-  & &__button:hover {
-    color: var(--clr-btn-hover-text);
-  }
-
-  & &__button:active {
-    background-color: var(--clr-btn-pressed-bg);
-  }
-
   @media (max-width: 1150px) {
     margin: 120px 41px 106px 41px;
     flex-direction: column;
     align-items: center;
-
-    & &__card {
-      max-width: 800px;
-      padding: 24px;
-    }
-
-    & &__title {
-      margin-top: 16px;
-    }
-
-    & &__desc {
-      margin-top: 8px;
-      margin-bottom: 16px;
-    }
   }
 
   @media (max-width: 768px) {
     margin: 21px 16px 20px 16px;
-
-    & &__card {
-      max-width: 800px;
-      padding: 24px 16px;
-    }
-
-    & &__img {
-      width: 48px;
-    }
-
-    & &__title {
-      font-size: 26px;
-      line-height: 31px;
-    }
-
-    & &__desc {
-      font-size: 14px;
-      line-height: 20px;
-    }
-
-    & &__card:nth-child(2) &__desc {
-      padding-bottom: 22px;
-    }
   }
 }

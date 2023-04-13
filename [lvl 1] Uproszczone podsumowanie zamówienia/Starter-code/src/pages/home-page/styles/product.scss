@@ -64,5 +64,9 @@
       padding: 0px;
       padding-left: 24px;
     }
+
+    & &__change {
+      text-underline-offset: 2px;
+    }
   }
 }
